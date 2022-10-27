@@ -14,6 +14,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import styles from "../../styles/Home.module.css";
+import success from "../../components/success";
 import Alert from '@mui/material/Alert';
 
 
@@ -68,7 +69,8 @@ export default function logIn() {
 
     postData("/api/connections", user_login).then((user_login) => {
       {
-        () => console.log(userlogin),
+        () => console.log(user_login),
+        success(),
         Router.push('/');
       }
     });

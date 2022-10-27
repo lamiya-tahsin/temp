@@ -22,6 +22,5 @@ export default async function handler(req,res){
         console.log("USER FOUND"); // true
         console.log(await userlogin); // 'My Title'
         res.status(200).json(await userlogin);
-        success();
     }
 };

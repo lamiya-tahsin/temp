@@ -8,7 +8,7 @@ function Navbar() {
             <div className={styles.logo}>
                 <p>MEDIPAL</p>
                 <Link href="/login">LOG IN</Link>
-                <Link href="/mhospitals">HOSPITALS</Link>
+                <Link href="/hospitals">HOSPITALS</Link>
                 <Link href="/">SERVICES</Link>
                 <Link href="/">ABOUT US</Link>
                 <Link href="/">HOME</Link>
